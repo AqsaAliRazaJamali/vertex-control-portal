@@ -1,6 +1,6 @@
 # ⚡ VERTEX — Multi-Agent Developer Team Dashboard & Control Portal
 
-> An enterprise-grade full-stack developer workspace featuring a secured asynchronous engine, a real-time reactive interface, and advanced client-side cryptographic credential reinforcement. Built to demonstrate high-performance asynchronous workflows and rigid data security boundaries.
+- An enterprise-grade full-stack developer workspace featuring a secured asynchronous engine, a real-time reactive interface, and advanced client-side cryptographic credential reinforcement. Built to demonstrate high-performance asynchronous workflows and rigid data security boundaries.
 
 ---
 
