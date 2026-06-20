@@ -6,9 +6,6 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-38B2AC?logo=tailwind-css&logoColor=white)
-![GitHub last commit](https://img.shields.io/github/last-commit/your-username/multi-agent-dev-team)
-![GitHub issues](https://img.shields.io/github/issues/your-username/multi-agent-dev-team)
-![GitHub stars](https://img.shields.io/github/stars/your-username/multi-agent-dev-team?style=social)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-active-success)
 
