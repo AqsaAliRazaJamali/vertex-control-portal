@@ -1,5 +1,13 @@
 # ⚡ VERTEX — Multi-Agent Developer Team Dashboard & Control Portal
 
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-Secured-black?style=for-the-badge&logo=jsonwebtokens)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
 > An enterprise-grade full-stack developer workspace featuring a secured asynchronous engine, a real-time reactive interface, and advanced client-side cryptographic credential reinforcement. Built to demonstrate high-performance asynchronous workflows and rigid data security boundaries.
 
 ---
