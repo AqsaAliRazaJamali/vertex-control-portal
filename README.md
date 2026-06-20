@@ -1,12 +1,12 @@
 # ⚡ VERTEX — Multi-Agent Developer Team Dashboard & Control Portal
 
-![Python](https://img.shields.io/badge/Python-Backend-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-Async_API-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![React](https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-Ready-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Security](https://img.shields.io/badge/Security-JWT%20%2B%20PassLib-red?style=for-the-badge)
-![Architecture](https://img.shields.io/badge/Architecture-Multi--Agent-purple?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/Aqsa-Jamali/vertex-multiagent-control-portal?style=for-the-badge&logo=github&labelColor=%230b0e17&color=%2322d3ee)
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi&logoColor=white&labelColor=%230b0e17)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB&labelColor=%230b0e17)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white&labelColor=%230b0e17)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white&labelColor=%230b0e17)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=FFD62B&labelColor=%230b0e17)
+![License](https://img.shields.io/badge/License-MIT-emerald?style=for-the-badge&labelColor=%230b0e17&color=%2310b981)
 
 > An enterprise-grade full-stack developer workspace featuring a secured asynchronous engine, a real-time reactive interface, and advanced client-side cryptographic credential reinforcement. Built to demonstrate high-performance asynchronous workflows and rigid data security boundaries.
 
