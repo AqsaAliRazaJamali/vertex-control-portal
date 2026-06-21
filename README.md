@@ -113,7 +113,7 @@ multi-agent-dev-team/
 
 ---
 
-##  Author
+## 👩‍💻 Author
 
 **Aqsa Jamali**
 
