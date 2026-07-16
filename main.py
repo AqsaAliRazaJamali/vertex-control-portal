@@ -10,6 +10,14 @@ from pydantic import BaseModel
 from app.database import USER_DB
 from app.auth import hash_password, create_access_token, SECRET_KEY, ALGORITHM
 
+# Importing dynamic agents from our agents module
+from app.agents import (
+    project_manager_agent,
+    developer_agent,
+    tester_agent,
+    documentation_agent
+)
+
 app = FastAPI(title="Vertex Workspace Matrix Engine")
 
 # CORS Configuration
@@ -60,25 +68,36 @@ async def login(payload: AuthPayload):
     token = create_access_token(data={"sub": payload.username})
     return {"status": "SUCCESS", "access_token": token}
 
-# ASYNC AI GENERATOR SIMULATION LOOP ENGINE
-async def generate_pipeline_data_async(user_idea: str) -> dict:
-    await asyncio.sleep(0.4)
-    requirements = f"### SYSTEM OPERATIONAL BLUEPRINT\n- Target Objective: {user_idea}\n- Architecture Type: Modular Micro-Engine Component Build\n- Data Lifecycle: Ephemeral In-Memory Volatile Processing Node"
+# ASYNC PIPELINE COORDINATOR (Calling agents sequentially)
+async def run_agents_pipeline_async(user_idea: str) -> dict:
+    # We initialize the pipeline state dictionary
+    state = {"idea": user_idea}
     
-    await asyncio.sleep(0.4)
-    code = f'# VERTEX PROTOCOL AUTOMATED SOURCE BUILD\n# Target Feature: {user_idea}\n\nimport asyncio\n\nasync def main_pipeline_executor():\n    print("Executing core synchronization node...")\n    await asyncio.sleep(1)\n    print("System payload completely processed.")\n\nif __name__ == "__main__":\n    asyncio.run(main_pipeline_executor())'
+    # Executing the agents in a concurrent-friendly non-blocking system thread pool
+    # Is se dynamic asyncio runtime freeze nahi hoga aur prompt base dynamic updates chalengi!
+    loop = asyncio.get_running_loop()
     
-    await asyncio.sleep(0.4)
-    tester_feedback = f"// SYSTEM STABILITY LOG RUNTIME INTEGRITY INTEGRATION\n[INFO] Initializing internal automated sandbox test containers...\n[SUCCESS] Compilation thread checks passed with 0 memory errors."
+    # Step 1: PM
+    state = await loop.run_in_executor(None, project_manager_agent, state)
+    await asyncio.sleep(0.2) # Chota gap logs read karne ke liye
     
-    await asyncio.sleep(0.4)
-    documentation = f"# Manifest Specs: {user_idea}\n\nThis enterprise-ready script was compiled using a non-blocking execution router pipeline.\n\n## Launch Instructions\n1. Install dependencies\n2. Trigger file via: `python app_script.py`"
+    # Step 2: Developer
+    state = await loop.run_in_executor(None, developer_agent, state)
+    await asyncio.sleep(0.2)
     
+    # Step 3: QA Tester
+    state = await loop.run_in_executor(None, tester_agent, state)
+    await asyncio.sleep(0.2)
+    
+    # Step 4: Documentation Writer
+    state = await loop.run_in_executor(None, documentation_agent, state)
+    
+    # Frontend payload configuration match design return
     return {
-        "requirements": requirements,
-        "code": code,
-        "tester_feedback": tester_feedback,
-        "documentation": documentation
+        "requirements": state.get("requirements", ""),
+        "code": state.get("code", ""),
+        "tester_feedback": state.get("tester_feedback", ""),
+        "documentation": state.get("documentation", "")
     }
 
 # 🚧 SECURED PIPELINE COMPILATION EXECUTION ROUTE
@@ -97,7 +116,8 @@ async def develop_async(payload: IdeaPayload, authorization: str = Header(None))
     if not payload.idea.strip():
         raise HTTPException(status_code=400, detail="Target processing string payload is completely empty.")
     
-    return await generate_pipeline_data_async(payload.idea)
+    # Call our dynamic multi-agent framework
+    return await run_agents_pipeline_async(payload.idea)
 
 if __name__ == "__main__":
     import uvicorn
