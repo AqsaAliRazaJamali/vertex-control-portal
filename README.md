@@ -46,6 +46,12 @@ Instead of mock scripts, VERTEX triggers an active orchestration pipeline that e
 
 [ Documentation Agent ] <── [ QA Tester Agent ] <──────┘
 
+
+1. **Project Manager Agent:** Analyzes raw ideas to output formal, structured Technical Requirements.
+2. **Developer Agent:** Consumes requirements to code clean, functional software blueprints in real-time.
+3. **QA Tester Agent:** Audits the generated codebase, simulating security edge cases, verification feedback, and log files.
+4. **Technical Writer Agent:** Parses the final code block to construct a professional, deployment-ready README markdown manifest.
+
 ---
 
 ## 💿 Installation & Setup
