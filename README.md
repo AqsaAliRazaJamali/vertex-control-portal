@@ -17,11 +17,11 @@
 
 ## 🚀 Key Architectural Features
 
-- **Asynchronous Execution Router** — Powered by FastAPI using non-blocking async loops (`asyncio`) to simulate concurrent multi-agent data compilations without thread jamming.
-- **Hardened JWT Gateway Security** — Implements JSON Web Tokens (JWT) for secure session handshakes alongside robust password hashing techniques.
+- **Dynamic Multi-Agent AI Pipeline** — Integrates real-time, template-driven LLM coordination using **Llama-3.3-70b-versatile** via Groq Cloud APIs to dynamically generate blueprints, write source code, execute tests, and document features based on live user inputs.
+- **Asynchronous Execution Router** — Powered by FastAPI using Python's asyncio thread executor pattern (`loop.run_in_executor`) to coordinate complex agent state trees asynchronously without blocking the primary ASGI server runtime.
+- **Hardened JWT Gateway Security** — Implements secure, stateful JSON Web Tokens (JWT) for authentication alongside cryptographic hashing techniques to reinforce authorization headers.
 - **Dynamic Password Complexity Engine** — Features a client-side reactive validation matrix that cross-verifies security baselines (length, numeric parameters, special signatures) in real-time.
-- **Live STDOUT Runtime Monitor** — A terminal-styled visual logger embedded in the frontend to stream granular micro-stage status updates and immediate feedback loops from the backend.
-- **Cyberpunk Responsive Matrix UI** — Styled with pixel-perfect modular Tailwind CSS variables, leveraging modern dark-mode ergonomics and zero-dependency custom SVGs.
+- **Live STDOUT Runtime Monitor** — A terminal-styled visual logger embedded in the frontend to stream dynamic logs directly from backend execution loops, mapping agent progress visually.
 
 ---
 
@@ -29,7 +29,8 @@
 
 | Layer | Technology |
 |---|---|
-| **Backend** | Python 3.12, FastAPI, Uvicorn (ASGI), PyJWT, PassLib |
+| **Core AI Engine** | Groq Cloud API, Llama-3.3-70b-versatile, LangChain |
+| **Backend** | Python 3.12, FastAPI, Uvicorn (ASGI), PyJWT, PassLib, Pydantic |
 | **Frontend** | React 19, TypeScript, Vite, Tailwind CSS |
 | **Database** | Volatile In-Memory Key-Value Store (RAM Optimized) |
 
