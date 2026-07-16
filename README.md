@@ -54,6 +54,17 @@ Instead of mock scripts, VERTEX triggers an active orchestration pipeline that e
 
 ---
 
+## 📁 Environment Setup
+
+To secure credential signatures and interface with the dynamic AI engine, create a `.env` file in your root `backend/` directory:
+
+```env
+GROQ_API_KEY=your_groq_api_key_here
+SECRET_KEY=your_local_jwt_signing_secret
+ALGORITHM=HS256
+
+---
+
 ## 💿 Installation & Setup
 
 ### 🐍 1. Backend Setup
@@ -65,7 +76,7 @@ cd backend
 python -m venv venv
 source venv/bin/activate        # macOS/Linux
 # venv\Scripts\activate         # Windows
-pip install fastapi uvicorn pyjwt passlib[bcrypt] pydantic
+pip install fastapi uvicorn pyjwt passlib[bcrypt] pydantic langchain-openai python-dotenv
 ```
 
 Start the ASGI server:
