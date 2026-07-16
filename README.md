@@ -36,6 +36,16 @@
 
 ---
 
+## 🤖 Dynamic Multi-Agent Workflow
+
+Instead of mock scripts, VERTEX triggers an active orchestration pipeline that executes sequentially:
+
+[ User Input ] ──> [ Project Manager Agent ] ──> [ Developer Agent ]
+│
+[ Documentation Agent ] <── [ QA Tester Agent ] <──────┘
+
+---
+
 ## 💿 Installation & Setup
 
 ### 🐍 1. Backend Setup
