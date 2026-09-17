@@ -36,7 +36,7 @@
 
 ---
 
-## 🤖 Dynamic Multi-Agent Workflow
+## Dynamic Multi-Agent Workflow
 
 Instead of mock scripts, VERTEX triggers an active orchestration pipeline that executes sequentially:
 
