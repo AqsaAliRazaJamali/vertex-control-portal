@@ -67,7 +67,7 @@ ALGORITHM=HS256
 
 ## 💿 Installation & Setup
 
-### 🐍 1. Backend Setup
+### 1. Backend Setup
 
 Navigate to the backend directory, initialize a virtual environment, and install dependencies:
 
