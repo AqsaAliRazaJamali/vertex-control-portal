@@ -65,7 +65,7 @@ ALGORITHM=HS256
 
 ---
 
-## 💿 Installation & Setup
+## Installation & Setup
 
 ### 1. Backend Setup
 
