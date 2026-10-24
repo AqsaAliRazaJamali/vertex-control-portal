@@ -15,7 +15,7 @@
 
 ---
 
-## 🚀 Key Architectural Features
+## 🚀 Main Architectural Features
 
 - **Dynamic Multi-Agent AI Pipeline** — Integrates real-time, template-driven LLM coordination using **Llama-3.3-70b-versatile** via Groq Cloud APIs to dynamically generate blueprints, write source code, execute tests, and document features based on live user inputs.
 - **Asynchronous Execution Router** — Powered by FastAPI using Python's asyncio thread executor pattern (`loop.run_in_executor`) to coordinate complex agent state trees asynchronously without blocking the primary ASGI server runtime.
